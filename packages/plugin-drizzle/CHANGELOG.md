@@ -1,5 +1,12 @@
 # @pothos/plugin-drizzle
 
+## 0.20.3
+
+### Patch Changes
+
+- 9edbcea: `drizzleConnection` now accepts a `drizzleObject` or `drizzleNode` ref as its `type` the same way it accepts a table name. Drizzle object field builders now have `t.withAuth`, as prisma object field builders do.
+- df2d4c0: Reduce type-check time for large schemas: the `client` option no longer compares every table's `findMany` signature, and `relatedConnection` types its connection and edge options with the node shape instead of a list shape.
+
 ## 0.20.2
 
 ### Patch Changes
